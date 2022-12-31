@@ -1,0 +1,13 @@
+import secrets
+import string
+alphabets=string.ascii_letters
+numbers=string.digits
+special_char=string.punctuation
+all=alphabets+numbers+special_char
+password_len=int(input("enter the password length"))             
+password=''
+for i in range(password_len):
+  password+=''.join(secrets.choice(all))
+print(password)
+  
+  
